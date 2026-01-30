@@ -12,4 +12,6 @@ fi
 
 alias ls='eza -lao --git --no-user --color=always --icons=always'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
+
+PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'
+PS1='\[\e[38;5;111m\]\w\[\e[0m\] [\[\e[38;5;69m\]\#\[\e[0m\]] \[\e[38;5;113m\]${PS1_CMD1}\[\e[0m\] '
