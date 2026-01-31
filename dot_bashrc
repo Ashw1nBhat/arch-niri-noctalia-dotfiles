@@ -4,7 +4,7 @@
 
 # Show system info on terminal start
 if [ -t 1 ]; then
-    neofetch
+    fastfetch
 fi
 
 # If not running interactively, don't do anything
